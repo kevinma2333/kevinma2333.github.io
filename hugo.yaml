@@ -1,8 +1,10 @@
-baseurl: https://kevinma2333.github.io
+baseurl: "https://kevinma2333.github.io/"
 languageCode: en-us
 theme: hugo-theme-stack
 title: kevinma2333
 copyright: kevinma2333's blog
+
+useResourceCacheWhen : "never"
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
