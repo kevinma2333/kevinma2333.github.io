@@ -130,6 +130,18 @@
                 href="https://kevinma2333.github.io/%E5%85%B3%E4%BA%8E/"
                 />
   </url><url>
+    <loc>https://kevinma2333.github.io/%E9%93%BE%E6%8E%A5/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kevinma2333.github.io/en/links/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://kevinma2333.github.io/%E9%93%BE%E6%8E%A5/"
+                />
+  </url><url>
     <loc>https://kevinma2333.github.io/search/</loc>
     <xhtml:link
                 rel="alternate"
