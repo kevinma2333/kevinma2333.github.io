@@ -13,6 +13,10 @@ links:
     description: Python is a programming language that lets you work quickly.
     website: https://www.python.org/
     image: python.png
+  - title: Stack
+    description: Stack is a Card-style theme designed for bloggers.
+    website: https://stack.jimmycai.com/
+    image: Stack.png
 menu:
     main: 
         weight: -50
