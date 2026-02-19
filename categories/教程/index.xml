@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>教程 on kevinma2333</title>
+        <link>https://kevinma2333.github.io/categories/%E6%95%99%E7%A8%8B/</link>
+        <description>Recent content in 教程 on kevinma2333</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>kevinma2333&#39;s blog</copyright>
+        <lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://kevinma2333.github.io/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>git从入门到入土</title>
+        <link>https://kevinma2333.github.io/p/git/</link>
+        <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://kevinma2333.github.io/p/git/</guid>
+        <description>&lt;h2 id=&#34;安装&#34;&gt;安装
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; 是一个免费、开源的 &lt;strong&gt;分布式版本控制系统&lt;/strong&gt;，由 Linus Torvalds 于 2005 年创建，主要用于管理 Linux 内核的开发。它能够高效地处理从小型到大型的项目，具有速度快、灵活性高和强大的分支管理能力。&lt;/p&gt;
+&lt;p&gt;Git 目前支持 Linux/Unix、Solaris、Mac和 Windows 平台上运行。&lt;/p&gt;
+&lt;p&gt;Git 安装包下载地址为：&lt;a class=&#34;link&#34; href=&#34;http://git-scm.com/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://git-scm.com/downloads&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装过程便不多赘述。&lt;/p&gt;
+&lt;h2 id=&#34;git-工作流程&#34;&gt;Git 工作流程
+&lt;/h2&gt;&lt;p&gt;在使用git之前，我们应先了解一下使用git的工作流程。&lt;/p&gt;
+&lt;p&gt;如果把git比作写作业及上交作业的过程，可以分为以下部分。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. 工作区 (Working Directory) —— 你的书桌&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;你在这里修改你的代码及文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;意义&lt;/strong&gt;：在此处编写新功能或修复 Bug。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2. 暂存区 (Staging Area) —— 你的书包&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当作业写得差不多了，你会把它放进书包里，准备上学。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;意义&lt;/strong&gt;：告诉 Git，这些改动我确认要提交了，先帮我记着。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;3. 本地仓库 (Local Repository) —— 你的个人保险箱&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;你把书包里的东西打包好，贴上标签（提交信息），锁进自己的保险箱。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;意义&lt;/strong&gt;：改动正式成为了项目历史的一部分。即便你之后改乱了，也可以随时从这里找回。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;4. 远程仓库 (Remote) —— 老师的收件箱（如 GitHub/Gitee/GitLab）&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;最后，你把保险箱里的代码通过网络发送给远程服务器，方便其他人查看或合作。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;意义&lt;/strong&gt;：备份代码，并与团队共享进度，参与开源项目。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;第一次使用git在本地进行版本管理&#34;&gt;第一次使用git：在本地进行版本管理
+&lt;/h2&gt;&lt;h3 id=&#34;打开git终端&#34;&gt;打开git终端
+&lt;/h3&gt;&lt;p&gt;在安装git后，我们可以在任意处右键，便能看到Git为我们添加到两个菜单。
+&lt;img src=&#34;https://kevinma2333.github.io/p/git/%E5%AE%89%E8%A3%85git%E5%90%8E%E7%9A%84%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95.png&#34;
+	width=&#34;230&#34;
+	height=&#34;390&#34;
+	srcset=&#34;https://kevinma2333.github.io/p/git/%E5%AE%89%E8%A3%85git%E5%90%8E%E7%9A%84%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95_hu_1f27b0fe48db6c67.png 480w, https://kevinma2333.github.io/p/git/%E5%AE%89%E8%A3%85git%E5%90%8E%E7%9A%84%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95_hu_9cb30e2c934a79e7.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;安装git后的右键菜单&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;58&#34;
+		data-flex-basis=&#34;141px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这里我们打开第二个。
+&lt;img src=&#34;https://kevinma2333.github.io/p/git/git%E7%BB%88%E7%AB%AF%E6%A0%B7%E5%BC%8F.png&#34;
+	width=&#34;702&#34;
+	height=&#34;411&#34;
+	srcset=&#34;https://kevinma2333.github.io/p/git/git%E7%BB%88%E7%AB%AF%E6%A0%B7%E5%BC%8F_hu_b69168fb05f67a66.png 480w, https://kevinma2333.github.io/p/git/git%E7%BB%88%E7%AB%AF%E6%A0%B7%E5%BC%8F_hu_1e94d916911f45a6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;git终端样式&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;409px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在这里就可以执行所有的git命令了。&lt;/p&gt;
+&lt;h3 id=&#34;初始化本地仓库&#34;&gt;初始化本地仓库
+&lt;/h3&gt;&lt;p&gt;使用 &lt;strong&gt;git init&lt;/strong&gt; 命令来初始化一个 Git 仓库。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://kevinma2333.github.io/p/git/%E5%88%9D%E5%A7%8B%E5%8C%96git%E4%BB%93%E5%BA%93.png&#34;
+	width=&#34;962&#34;
+	height=&#34;621&#34;
+	srcset=&#34;https://kevinma2333.github.io/p/git/%E5%88%9D%E5%A7%8B%E5%8C%96git%E4%BB%93%E5%BA%93_hu_353c32b4580c115c.png 480w, https://kevinma2333.github.io/p/git/%E5%88%9D%E5%A7%8B%E5%8C%96git%E4%BB%93%E5%BA%93_hu_253398f2239681a1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;git终端样式&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;154&#34;
+		data-flex-basis=&#34;371px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;参考教程及资料&#34;&gt;参考教程及资料
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.runoob.com/git&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Git教程 菜鸟教程&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>像人类一样使用Windows</title>
+        <link>https://kevinma2333.github.io/p/windows/</link>
+        <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://kevinma2333.github.io/p/windows/</guid>
+        <description>&lt;h2 id=&#34;&#34;&gt;
+&lt;/h2&gt;&lt;h2 id=&#34;参考教程及资料&#34;&gt;参考教程及资料
+&lt;/h2&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

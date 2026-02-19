@@ -20,7 +20,8 @@
     &gt;http://git-scm.com/downloads&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;安装过程便不多赘述。&lt;/p&gt;
 &lt;h2 id=&#34;git-工作流程&#34;&gt;Git 工作流程
-&lt;/h2&gt;&lt;p&gt;如果把git比作写作业及上交作业的过程，可以分为以下部分。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;在使用git之前，我们应先了解一下使用git的工作流程。&lt;/p&gt;
+&lt;p&gt;如果把git比作写作业及上交作业的过程，可以分为以下部分。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1. 工作区 (Working Directory) —— 你的书桌&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -54,7 +55,55 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;第一次使用git在本地进行版本管理&#34;&gt;第一次使用git：在本地进行版本管理
-&lt;/h2&gt;&lt;h2 id=&#34;参考教程及资料&#34;&gt;参考教程及资料
+&lt;/h2&gt;&lt;h3 id=&#34;打开git终端&#34;&gt;打开git终端
+&lt;/h3&gt;&lt;p&gt;在安装git后，我们可以在任意处右键，便能看到Git为我们添加到两个菜单。
+&lt;img src=&#34;https://kevinma2333.github.io/p/git/%E5%AE%89%E8%A3%85git%E5%90%8E%E7%9A%84%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95.png&#34;
+	width=&#34;230&#34;
+	height=&#34;390&#34;
+	srcset=&#34;https://kevinma2333.github.io/p/git/%E5%AE%89%E8%A3%85git%E5%90%8E%E7%9A%84%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95_hu_1f27b0fe48db6c67.png 480w, https://kevinma2333.github.io/p/git/%E5%AE%89%E8%A3%85git%E5%90%8E%E7%9A%84%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95_hu_9cb30e2c934a79e7.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;安装git后的右键菜单&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;58&#34;
+		data-flex-basis=&#34;141px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这里我们打开第二个。
+&lt;img src=&#34;https://kevinma2333.github.io/p/git/git%E7%BB%88%E7%AB%AF%E6%A0%B7%E5%BC%8F.png&#34;
+	width=&#34;702&#34;
+	height=&#34;411&#34;
+	srcset=&#34;https://kevinma2333.github.io/p/git/git%E7%BB%88%E7%AB%AF%E6%A0%B7%E5%BC%8F_hu_b69168fb05f67a66.png 480w, https://kevinma2333.github.io/p/git/git%E7%BB%88%E7%AB%AF%E6%A0%B7%E5%BC%8F_hu_1e94d916911f45a6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;git终端样式&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;409px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在这里就可以执行所有的git命令了。&lt;/p&gt;
+&lt;h3 id=&#34;初始化本地仓库&#34;&gt;初始化本地仓库
+&lt;/h3&gt;&lt;p&gt;使用 &lt;strong&gt;git init&lt;/strong&gt; 命令来初始化一个 Git 仓库。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://kevinma2333.github.io/p/git/%E5%88%9D%E5%A7%8B%E5%8C%96git%E4%BB%93%E5%BA%93.png&#34;
+	width=&#34;962&#34;
+	height=&#34;621&#34;
+	srcset=&#34;https://kevinma2333.github.io/p/git/%E5%88%9D%E5%A7%8B%E5%8C%96git%E4%BB%93%E5%BA%93_hu_353c32b4580c115c.png 480w, https://kevinma2333.github.io/p/git/%E5%88%9D%E5%A7%8B%E5%8C%96git%E4%BB%93%E5%BA%93_hu_253398f2239681a1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;git终端样式&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;154&#34;
+		data-flex-basis=&#34;371px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;参考教程及资料&#34;&gt;参考教程及资料
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.runoob.com/git&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Git教程 菜鸟教程&lt;/a&gt;&lt;/p&gt;
 </description>
