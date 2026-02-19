@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>开发工具 on kevinma2333</title>
+        <link>https://kevinma2333.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</link>
+        <description>Recent content in 开发工具 on kevinma2333</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>kevinma2333&#39;s blog</copyright>
+        <lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://kevinma2333.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>git从入门到入土</title>
+        <link>https://kevinma2333.github.io/p/git/</link>
+        <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://kevinma2333.github.io/p/git/</guid>
+        <description>&lt;h2 id=&#34;安装&#34;&gt;安装
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; 是一个免费、开源的 &lt;strong&gt;分布式版本控制系统&lt;/strong&gt;，由 Linus Torvalds 于 2005 年创建，主要用于管理 Linux 内核的开发。它能够高效地处理从小型到大型的项目，具有速度快、灵活性高和强大的分支管理能力。&lt;/p&gt;
+&lt;p&gt;Git 目前支持 Linux/Unix、Solaris、Mac和 Windows 平台上运行。&lt;/p&gt;
+&lt;p&gt;Git 安装包下载地址为：&lt;a class=&#34;link&#34; href=&#34;http://git-scm.com/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://git-scm.com/downloads&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装过程便不多赘述。&lt;/p&gt;
+&lt;h2 id=&#34;git-工作流程&#34;&gt;Git 工作流程
+&lt;/h2&gt;&lt;p&gt;如果把git比作写作业及上交作业的过程，可以分为以下部分。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. 工作区 (Working Directory) —— 你的书桌&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;你在这里修改你的代码及文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;意义&lt;/strong&gt;：在此处编写新功能或修复 Bug。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2. 暂存区 (Staging Area) —— 你的书包&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当作业写得差不多了，你会把它放进书包里，准备上学。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;意义&lt;/strong&gt;：告诉 Git，这些改动我确认要提交了，先帮我记着。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;3. 本地仓库 (Local Repository) —— 你的个人保险箱&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;你把书包里的东西打包好，贴上标签（提交信息），锁进自己的保险箱。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;意义&lt;/strong&gt;：改动正式成为了项目历史的一部分。即便你之后改乱了，也可以随时从这里找回。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;4. 远程仓库 (Remote) —— 老师的收件箱（如 GitHub/Gitee/GitLab）&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;最后，你把保险箱里的代码通过网络发送给远程服务器，方便其他人查看或合作。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;意义&lt;/strong&gt;：备份代码，并与团队共享进度，参与开源项目。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;第一次使用git在本地进行版本管理&#34;&gt;第一次使用git：在本地进行版本管理
+&lt;/h2&gt;&lt;h2 id=&#34;参考教程及资料&#34;&gt;参考教程及资料
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.runoob.com/git&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Git教程 菜鸟教程&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
