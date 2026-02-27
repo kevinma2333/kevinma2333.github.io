@@ -88,7 +88,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;在这里就可以执行所有的git命令了。&lt;/p&gt;
 &lt;h3 id=&#34;初始化本地仓库&#34;&gt;初始化本地仓库
-&lt;/h3&gt;&lt;p&gt;使用 &lt;strong&gt;git init&lt;/strong&gt; 命令来初始化一个 Git 仓库。&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;使用 &lt;strong&gt;git init&lt;/strong&gt; 命令来初始化一个 Git 仓库。  注：.git文件是隐藏的，可以打开显示隐藏文件。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://kevinma2333.github.io/p/git/%E5%88%9D%E5%A7%8B%E5%8C%96git%E4%BB%93%E5%BA%93.png&#34;
 	width=&#34;962&#34;
 	height=&#34;621&#34;
@@ -103,7 +103,45 @@
 		data-flex-basis=&#34;371px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;参考教程及资料&#34;&gt;参考教程及资料
+&lt;h3 id=&#34;第一次提交&#34;&gt;第一次提交
+&lt;/h3&gt;&lt;p&gt;&lt;del&gt;因为以下内容过于简单，所以不附图片&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;首先，我们为此项目添加一个文本文件。&lt;del&gt;如果不会，请参考《像人类一样使用Windows》&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;第二步，将文件添加至缓存区&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add filename       # 将单个文件添加到暂存区
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .              # 将工作区中的所有修改添加到暂存区
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git status             # 查看哪些文件在暂存区中
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;最后，将暂存区里的文件推送至仓库。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &amp;#34;Commit message&amp;#34; # 其中的 Commit message 请修改为对本次提交的说明
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;当然，你也可以在推送前及后进行以下操作。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git log                          # 查看提交历史
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git diff                         # 查看工作区和暂存区之间的差异
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git diff --cached                # 查看暂存区和最后一次提交之间的差异
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;参考教程及资料&#34;&gt;参考教程及资料
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.runoob.com/git&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Git教程 菜鸟教程&lt;/a&gt;&lt;/p&gt;
 </description>

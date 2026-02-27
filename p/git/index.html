@@ -272,6 +272,7 @@
       <ol>
         <li><a href="#打开git终端">打开git终端</a></li>
         <li><a href="#初始化本地仓库">初始化本地仓库</a></li>
+        <li><a href="#第一次提交">第一次提交</a></li>
       </ol>
     </li>
     <li><a href="#参考教程及资料">参考教程及资料</a></li>
@@ -437,7 +438,7 @@
 ></p>
 <p>在这里就可以执行所有的git命令了。</p>
 <h3 id="初始化本地仓库">初始化本地仓库
-</h3><p>使用 <strong>git init</strong> 命令来初始化一个 Git 仓库。</p>
+</h3><p>使用 <strong>git init</strong> 命令来初始化一个 Git 仓库。  注：.git文件是隐藏的，可以打开显示隐藏文件。</p>
 <p><img src="/p/git/%E5%88%9D%E5%A7%8B%E5%8C%96git%E4%BB%93%E5%BA%93.png"
 	width="962"
 	height="621"
@@ -452,7 +453,45 @@
 		data-flex-basis="371px"
 	
 ></p>
-<h2 id="参考教程及资料">参考教程及资料
+<h3 id="第一次提交">第一次提交
+</h3><p><del>因为以下内容过于简单，所以不附图片</del></p>
+<p>首先，我们为此项目添加一个文本文件。<del>如果不会，请参考《像人类一样使用Windows》</del></p>
+<p>第二步，将文件添加至缓存区</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add filename       # 将单个文件添加到暂存区
+</span></span><span class="line"><span class="cl">git add .              # 将工作区中的所有修改添加到暂存区
+</span></span><span class="line"><span class="cl">git status             # 查看哪些文件在暂存区中
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>最后，将暂存区里的文件推送至仓库。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git commit -m &#34;Commit message&#34; # 其中的 Commit message 请修改为对本次提交的说明
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>当然，你也可以在推送前及后进行以下操作。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git log                          # 查看提交历史
+</span></span><span class="line"><span class="cl">git diff                         # 查看工作区和暂存区之间的差异
+</span></span><span class="line"><span class="cl">git diff --cached                # 查看暂存区和最后一次提交之间的差异
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="参考教程及资料">参考教程及资料
 </h2><p><a class="link" href="https://www.runoob.com/git"  target="_blank" rel="noopener"
     >Git教程 菜鸟教程</a></p>
 
